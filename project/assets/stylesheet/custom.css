@@ -1,0 +1,17 @@
+.btnhref{
+    display: flex;
+    background-color: rgba(115, 109, 109, 0.262);
+    color: white;
+    width: 150px;
+    height: 60px;
+    text-transform: capitalize;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    &:hover{
+        color: white;
+        background-color: rgba(240, 164, 22, 0.593);
+
+    }
+}

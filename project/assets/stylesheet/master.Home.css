@@ -1,0 +1,119 @@
+main {
+    width: 100%;
+    height: auto;
+
+    /* overflow: hidden; */
+    >.row {
+        >.head-top {
+            width: 100%;
+            height: 160vh;
+            background-image: url(../images/back-img.jpg);
+            background-size: cover;
+            /* background-attachment: fixed; */
+            position: relative;
+
+            &::before {
+                content: '';
+                display: flex;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(135, 207, 235, 0.356);
+            }
+
+            >nav {
+                width: 100%;
+                height: 100px;
+                position: absolute;
+                padding: 0 5%;
+                /* background-color: aliceblue; */
+
+                >.row {
+                    height: 100%;
+
+                    >* {
+                        display: flex;
+                        height: 100%;
+                    }
+
+                    >figure {
+                        width: 20%;
+                        justify-content: center;
+                        pad: 5px 0;
+                        /* background-color: blueviolet; */
+
+                    }
+
+                    >ul {
+                        width: 60%;
+                        /* background-color: aqua; */
+
+                        >li {
+                            height: 100%;
+
+                            >a {
+                                color: rgb(68, 64, 64);
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                padding: 0 20px;
+                                font-size: 18px;
+                                text-transform: capitalize;
+                                transition: 1s;
+
+                                &:hover {
+                                    color: rgba(240, 163, 22, 0.747);
+                                    letter-spacing: 4px;
+                                }
+                            }
+                        }
+                    }
+
+                    >div {
+                        width: 20%;
+                        align-items: center;
+                        justify-content: flex-end;
+                        /* background-color: brown; */
+                    }
+                }
+            }
+
+            /* end nav */
+            /* start text */
+            >.text {
+                width: 50%;
+                height: 360px;
+                position: absolute;
+                bottom: calc(50% - 180px);
+                left: calc(50% - 25%);
+                padding: 50px;
+
+
+                >* {
+                    color: white;
+                    text-transform: capitalize;
+                    text-align: center;
+                }
+
+                >h1 {
+                    font-size: 50px;
+                    margin-bottom: 30px;
+
+                    &::first-letter {
+                        font-size: 80px;
+                    }
+                }
+
+                >p {
+                    font-size: 25px;
+                    word-spacing: 2px;
+                }
+            }
+        }
+
+        /* end head-top */
+    }
+}
